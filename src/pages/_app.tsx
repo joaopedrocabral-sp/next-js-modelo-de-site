@@ -31,13 +31,17 @@ function MyApp({ Component, pageProps }: AppProps	) {
       <CookieConsent
         onAccept={() => CookieAccept()}
         location="none"
-        buttonText="Aceito!"
-        style={{ background: "#2B373B", width:"90%", left: "5%", bottom: "15px", borderRadius: "15px" }}
-        buttonStyle={{ background: "#1fa4e5", color: "#ffffff", fontSize: "1rem", borderRadius: "10px", padding: "0.5rem 2rem" }}
-        expires={150}
+        buttonText="Aceito! 😉"
+        enableDeclineButton
+        style={{ background: "#2B373B", width:"90%", left: "50%", bottom: "15px", borderRadius: "15px", wordWrap: "break-word", transform: "translate(-50%, 0)", maxWidth: "1000px", justifyContent: "space-around", alignItems: "center" }}
+        buttonStyle={{ background: "#1fa4e5", color: "#ffffff", fontSize: "1.2rem", borderRadius: "10px", padding: "0.3rem 2rem", margin: "0.5rem" }}
+        declineButtonStyle={{color: "#ffffff", fontSize: "0.8rem", borderRadius: "10px", padding: "0.5rem 1rem", margin: "0.5rem"}}
+        declineButtonText="Não aceito 👎"
+        expires={180}
+        contentStyle={{flex: "1 0 250"}}
       >
         Este site usa cookies para melhorar a experiência do usuário.{" "}
-        <span style={{ fontSize: "10px" }}>Leia nossa <a style={{color: "#1fa4e5"}} href="https://www.linkedin.com/in/joao-pedro-cabral-sp/" >política de privacidade</a></span>
+        <p style={{ fontSize: "10px", width: "fit-content"  }}>Leia nossa <a style={{color: "#1fa4e5" }} href="https://www.linkedin.com/in/joao-pedro-cabral-sp/" >política de privacidade</a></p>
       </CookieConsent>
     </>
   );
