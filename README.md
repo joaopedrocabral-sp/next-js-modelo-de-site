@@ -1,3 +1,27 @@
+# Se você quer usar a aplicação acesse aqui:
+### [Link para o Projeto](https://next-js-modelo-de-site.vercel.app/)
+
+No total são 4 páginas:
+* Home -- A página inicial que iria conter informações sobre a empresa.
+* Posts -- A página de blog, onde a empresa por meio de um CMS poderia criar posts.
+* Produtos -- A página onde a empresa, também por meio do CMS, poderia colocar seus produtos, e mandar o cliente para o Whatsapp.
+* Sobre -- A página onde a empresa poderia descrever um pouco seus valores, etc. 
+
+Todos textos e imagens poderiam ser mudados pelo CMS.
+
+
+### LGPD
+Para seguir de acordo com a LGPD implementei também um banner de consentimento de cookie, que só injeta o Google Tag Manager quando a pessoa clicar em aceito.
+
+## Tecnologias usadas 🛠️
+<img allign="center" alt="REACT" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
+<img allign="center" alt="REACT" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+<img allign="center" alt="STYLED COMPONENTS" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+<img allign="center" alt="JAVASCRIPT" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

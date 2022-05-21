@@ -92,7 +92,7 @@ export default function Products({products: produtos, page, totalPage, content}:
                   <div>
                     <p>R$ {product.price}</p>
                     <Link
-                      href={`https://api.whatsapp.com/send?phone=55${content.whatsappNumber}&text=Estava vendo esse(a) ${product.title}`}
+                      href={content.whatsappNumber}
                     >
                       <button>
                         <FaWhatsapp size={20} />
