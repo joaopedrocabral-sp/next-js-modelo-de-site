@@ -1,0 +1,270 @@
+.container{
+    display: block;
+}
+
+.containerHeader{
+    min-height: calc(100vh - 6rem);
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img{
+        max-width: 640px;
+        max-height: 600px;
+    }
+    
+}
+
+.ctaText{
+    max-width: 600px;
+
+    h1{
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+        color: var(--white);
+    }
+    span{
+        font-size: 1rem;
+        line-height: 2.25rem;
+        color: var(--white);
+        margin-bottom: 2.5rem;
+    }
+    button{
+        background-color: var(--blue-900);
+        border: 0;
+        padding: 1rem 1.8rem;
+        // margin-top: 2.5rem;
+        border-radius: 7px;
+        color: var(--white);
+        font-weight: bold;
+        transition: transform 0.4s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    a{
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+.divisor{
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    border-color: var(--gray-200);
+}
+
+.sectionContent{
+    margin: 5.5rem auto;
+    padding: 0 2rem;
+    max-width: 1420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    section{
+        max-width: 670px;
+    }
+    img{
+        max-width: 550px;
+    }
+    h2{
+        font-size: 2.2rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.2rem;
+        color: var(--white);
+    }
+    span{
+        font-size: 1rem;
+        line-height: 2.25rem;
+        color: var(--white);
+    }
+}
+
+.nextLevelContent{
+    max-width: 1320px;
+    margin: 6rem auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h2{
+        font-size: 2.4rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        color: var(--white);
+
+        span{
+            font-size: 2.4rem;
+            line-height: 4.5rem;
+            font-weight: 900;
+            color: var(--blue-900);
+        }
+    }
+
+    span{
+        font-size: 1rem;
+        line-height: 2.25rem;
+        color: var(--white);
+    }
+    
+    button{
+        background-color: var(--blue-900);
+        border: 0;
+        padding: 1rem 1.8rem;
+        margin-top: 2.2rem;
+        border-radius: 7px;
+        color: var(--white);
+        font-weight: bold;
+        transition: transform 0.4s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media (max-width: 1095px){
+    .container{
+        .containerHeader{
+            padding: 0 2rem;
+            
+
+            img{
+                max-height: 500px;
+            }
+            button{
+                display: block;
+            }
+        }
+    
+    
+        div h1{
+            font-size: 3rem;
+        }
+    
+        div h2{
+            font-size: 2rem;
+
+            span{
+                font-size: 2rem;
+            }
+        }
+        
+        .sectionContent, .nextLevelContent{
+            padding: 0 2rem;
+
+        }
+    }
+}
+    
+@media (max-width: 950px){
+    .container{
+        .containerHeader{
+            flex-direction: column;
+            justify-content: center;
+            min-height: calc(100vh - 11rem);
+
+            a{
+                width: 100%;
+                button{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+        }
+        .ctaText{
+            h1{
+                margin-top: 1.5rem;
+            }
+        }
+        div img{
+            max-width: 500px;
+            width: 100%;
+        }
+        div h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+
+        .sectionContent{
+            flex-direction: column;
+            margin: 2rem auto;
+
+            section{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img{
+                margin-top: 2rem;
+                max-width: 400px;
+                width: 50vw;
+            }
+            h2{
+                margin-top: 0;
+                line-height: 3.5rem;
+                text-align: center;
+            }
+            span{
+                text-align: center;
+            }
+
+            .secondImage{
+                margin-top: 1.8rem;
+            }
+        }
+
+        .nextLevelContent{
+            a{
+                width: 100%;
+
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .container{
+        .containerHeader{
+            h1{
+                font-size: 2.2rem;
+                line-height: 4rem;
+            }
+        }
+        .sectionContent, .nextLevelContent{
+            h2{
+                font-size: 1.8rem;
+                line-height: 3.5rem;
+                
+                span{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}

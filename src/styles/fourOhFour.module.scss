@@ -1,0 +1,30 @@
+.container{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+    height: calc(100vh - 18rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1{
+        text-align: center;
+        color: var(--white);
+        font-weight: 900;
+    }
+    button{
+        border: 0;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+        font-weight: 900;
+        transition: all 0.4s;
+
+        &:hover{
+            background: var(--blue-900);
+            color: var(--white);
+        }
+    }
+}

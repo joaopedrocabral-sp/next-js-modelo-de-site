@@ -1,0 +1,42 @@
+.container{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    
+
+    button{
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 50%;
+        background-color: springgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button:hover{
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);      
+    }
+
+    a:hover{
+        filter: brightness(1.2);
+    }
+}
+
+@media (max-width: 425px){
+    .container{
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
