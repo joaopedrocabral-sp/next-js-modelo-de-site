@@ -33,8 +33,8 @@ function MyApp({ Component, pageProps }: AppProps	) {
         location="none"
         buttonText="Aceito! 😉"
         enableDeclineButton
-        style={{ background: "#2B373B", width:"90%", left: "50%", bottom: "15px", borderRadius: "15px", wordWrap: "break-word", transform: "translate(-50%, 0)", maxWidth: "1000px", justifyContent: "space-around", alignItems: "center" }}
-        buttonStyle={{ background: "#1fa4e5", color: "#ffffff", fontSize: "1.2rem", borderRadius: "10px", padding: "0.3rem 2rem", margin: "0.5rem" }}
+        style={{ background: "#2B373B", width:"90%", left: "50%", bottom: "15px", borderRadius: "15px", wordWrap: "break-word", transform: "translate(-50%, 0)", maxWidth: "1000px", justifyContent: "space-around", alignItems: "center", padding: "0.5rem" }}
+        buttonStyle={{ background: "#1fa4e5", color: "#ffffff", fontSize: "1.2rem", borderRadius: "10px", padding: "0.3rem 1.7rem", margin: "0.5rem" }}
         declineButtonStyle={{color: "#ffffff", fontSize: "0.8rem", borderRadius: "10px", padding: "0.5rem 1rem", margin: "0.5rem"}}
         declineButtonText="Não aceito 👎"
         expires={180}
